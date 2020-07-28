@@ -1,7 +1,7 @@
 CREATE DATABASE gradesData;
 use gradesData;
 
-CREATE TABLE IF NOT EXISTS grades (
+CREATE TABLE IF NOT EXISTS gradesData (
     `id` int AUTO_INCREMENT,
     `Last_name` VARCHAR(9) CHARACTER SET utf8,
     `First_name` VARCHAR(16) CHARACTER SET utf8,
