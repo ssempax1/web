@@ -1,7 +1,7 @@
 CREATE DATABASE gradesData;
 use gradesData;
 
-CREATE TABLE IF NOT EXISTS grades (
+CREATE TABLE IF NOT EXISTS gradesData (
     `id` int AUTO_INCREMENT,
     `Last_name` VARCHAR(9) CHARACTER SET utf8,
     `First_name` VARCHAR(16) CHARACTER SET utf8,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS grades (
     `Grade` VARCHAR(7) CHARACTER SET utf8,
     PRIMARY KEY (`id`)
 );
-INSERT INTO grades (Last_name, First_name, SSN, Test1, Test2, Test3, Test4, Final, Grade )  VALUES
+INSERT INTO tblGradesImport (Last_name, First_name, SSN, Test1, Test2, Test3, Test4, Final, Grade )  VALUES
     ('Alfalfa','   "Aloysius"','   "123-45-6789"',' 40.0',    90.0,   100.0,    83.0,'    49.0','   "D-"'),
     ('Alfred','    "University"',' "123-12-1234"',' 41.0',    97.0,    96.0,    97.0,'    48.0','   "D+"'),
     ('Gerty','     "Gramma"','     "567-89-0123"',' 41.0',    80.0,    60.0,    40.0,'    44.0','   "C"'),
